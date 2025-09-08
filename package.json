@@ -1,0 +1,33 @@
+{
+  "name": "calendar-server",
+  "version": "1.0.0",
+  "description": "Calendar app with file-based storage for home server hosting",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:original": "node server-original.js",
+    "dev": "nodemon server.js",
+    "dev:original": "nodemon server-original.js",
+    "install-service": "sudo cp calendar.service /etc/systemd/system/ && sudo systemctl daemon-reload",
+    "enable-service": "sudo systemctl enable calendar.service",
+    "start-service": "sudo systemctl start calendar.service",
+    "status": "sudo systemctl status calendar.service"
+  },
+  "keywords": [
+    "calendar",
+    "events",
+    "schedule",
+    "server"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "compression": "^1.7.4",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

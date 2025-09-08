@@ -1,0 +1,391 @@
+/* CSS Variables for theming - dynamically set from config */
+:root {
+  --bg-color: #282828;
+  --bg-dark: #1d2021;
+  --bg-light: #3c3836;
+  --surface: #504945;
+  --surface-hover: #665c54;
+  --text-color: #ebdbb2;
+  --text-muted: #928374;
+  --text-dark: #282828;
+  --primary: #fabd2f;
+  --primary-hover: #f9bb2d;
+  --success: #98971a;
+  --error: #cc241d;
+  --error-hover: #fb4934;
+  --info: #458588;
+  --warning: #d79921;
+  --accent1: #b16286;
+  --accent2: #8ec07c;
+  --border: #3c3836;
+}
+
+/* Base Styles - Similar to your timetable */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: monospace, sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+h3 {
+  color: var(--primary);
+  margin: 20px 0;
+}
+
+/* Calendar Header */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+}
+
+.calendar-header h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.nav-btn {
+  background-color: var(--surface);
+  color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: var(--surface-hover);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* Calendar Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 16px;
+  min-width: 100px;
+  height: 80px;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--surface);
+  color: var(--primary);
+  font-weight: bold;
+  height: auto;
+}
+
+td {
+  background-color: var(--bg-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+td:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--primary);
+  z-index: 2;
+  background-color: var(--bg-light);
+}
+
+/* Calendar Date Styles */
+.calendar-date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.today {
+  background-color: var(--success) !important;
+  color: var(--text-dark);
+}
+
+.other-month {
+  color: var(--surface);
+  background-color: var(--bg-dark);
+}
+
+.has-event {
+  position: relative;
+}
+
+.has-event::after {
+  content: '•';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: var(--warning);
+  font-size: 1.5em;
+}
+
+.weekend {
+  background-color: var(--bg-dark);
+}
+
+/* Event Indicators - Colors set dynamically from config */
+.event-indicator {
+  display: block;
+  background-color: var(--warning);
+  color: var(--text-dark);
+  padding: 2px 4px;
+  margin: 2px 0;
+  border-radius: 3px;
+  font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.today-btn, .add-event-btn {
+  background-color: var(--success);
+  color: var(--text-dark);
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.add-event-btn {
+  background-color: var(--warning);
+}
+
+.today-btn:hover, .add-event-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--primary);
+}
+
+/* Event Section */
+.event-section {
+  background-color: var(--bg-light);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.event-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.event-item {
+  background-color: var(--surface);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.event-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-title {
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.event-date-time {
+  color: var(--accent2);
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+.event-description {
+  color: var(--text-color);
+  font-size: 0.9em;
+}
+
+.delete-event {
+  background-color: var(--error);
+  color: var(--text-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-event:hover {
+  background-color: var(--error-hover);
+  transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: var(--bg-light);
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: var(--primary);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--surface);
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 5px var(--primary-hover);
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: var(--success);
+  color: var(--text-dark);
+  border: none;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 12px var(--primary);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--surface-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  th, td {
+    padding: 10px;
+    min-width: 40px;
+    font-size: 0.9em;
+  }
+  
+  .calendar-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .controls {
+    flex-direction: column;
+  }
+  
+  .event-indicator {
+    font-size: 0.7em;
+  }
+}

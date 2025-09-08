@@ -1,0 +1,99 @@
+{
+  "theme": {
+    "name": "Gruvbox Dark",
+    "description": "A retro groove color scheme",
+    "colors": {
+      "background": "#282828",
+      "backgroundDark": "#1d2021",
+      "backgroundLight": "#3c3836",
+      "surface": "#504945",
+      "surfaceHover": "#665c54",
+      "text": "#ebdbb2",
+      "textMuted": "#928374",
+      "textDark": "#282828",
+      "primary": "#fabd2f",
+      "primaryHover": "#f9bb2d",
+      "success": "#98971a",
+      "error": "#cc241d",
+      "errorHover": "#fb4934",
+      "info": "#458588",
+      "warning": "#d79921",
+      "accent1": "#b16286",
+      "accent2": "#8ec07c",
+      "border": "#3c3836"
+    }
+  },
+  
+  "eventTypes": [
+    {
+      "value": "meeting",
+      "label": "Meeting",
+      "color": "#458588",
+      "icon": "📅"
+    },
+    {
+      "value": "deadline",
+      "label": "Deadline",
+      "color": "#cc241d",
+      "icon": "⏰"
+    },
+    {
+      "value": "personal",
+      "label": "Personal",
+      "color": "#b16286",
+      "icon": "👤"
+    },
+    {
+      "value": "work",
+      "label": "Work",
+      "color": "#d79921",
+      "icon": "💼"
+    },
+    {
+      "value": "study",
+      "label": "Study",
+      "color": "#98971a",
+      "icon": "📚"
+    },
+    {
+      "value": "health",
+      "label": "Health",
+      "color": "#8ec07c",
+      "icon": "🏥"
+    },
+    {
+      "value": "social",
+      "label": "Social",
+      "color": "#fe8019",
+      "icon": "🎉"
+    },
+    {
+      "value": "travel",
+      "label": "Travel",
+      "color": "#83a598",
+      "icon": "✈️"
+    }
+  ],
+  
+  "calendar": {
+    "weekStartsOn": "sunday",
+    "defaultView": "month",
+    "showWeekNumbers": false,
+    "highlightToday": true,
+    "highlightWeekends": true,
+    "maxEventsPerDay": 3,
+    "upcomingEventsLimit": 10
+  },
+  
+  "locale": {
+    "language": "en",
+    "dateFormat": "MM/DD/YYYY",
+    "timeFormat": "12h",
+    "monthNames": [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ],
+    "dayNames": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "dayNamesFull": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  }
+}

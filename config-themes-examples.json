@@ -1,0 +1,226 @@
+{
+  "themes": {
+    "gruvbox-dark": {
+      "name": "Gruvbox Dark",
+      "description": "Default retro groove color scheme",
+      "colors": {
+        "background": "#282828",
+        "backgroundDark": "#1d2021",
+        "backgroundLight": "#3c3836",
+        "surface": "#504945",
+        "surfaceHover": "#665c54",
+        "text": "#ebdbb2",
+        "textMuted": "#928374",
+        "textDark": "#282828",
+        "primary": "#fabd2f",
+        "primaryHover": "#f9bb2d",
+        "success": "#98971a",
+        "error": "#cc241d",
+        "errorHover": "#fb4934",
+        "info": "#458588",
+        "warning": "#d79921",
+        "accent1": "#b16286",
+        "accent2": "#8ec07c",
+        "border": "#3c3836"
+      }
+    },
+    
+    "dracula": {
+      "name": "Dracula",
+      "description": "Dark theme with vibrant colors",
+      "colors": {
+        "background": "#282a36",
+        "backgroundDark": "#21222c",
+        "backgroundLight": "#44475a",
+        "surface": "#44475a",
+        "surfaceHover": "#6272a4",
+        "text": "#f8f8f2",
+        "textMuted": "#6272a4",
+        "textDark": "#282a36",
+        "primary": "#bd93f9",
+        "primaryHover": "#d6acff",
+        "success": "#50fa7b",
+        "error": "#ff5555",
+        "errorHover": "#ff6e6e",
+        "info": "#8be9fd",
+        "warning": "#ffb86c",
+        "accent1": "#ff79c6",
+        "accent2": "#f1fa8c",
+        "border": "#44475a"
+      }
+    },
+    
+    "nord": {
+      "name": "Nord",
+      "description": "Arctic, north-bluish color palette",
+      "colors": {
+        "background": "#2e3440",
+        "backgroundDark": "#2e3440",
+        "backgroundLight": "#3b4252",
+        "surface": "#434c5e",
+        "surfaceHover": "#4c566a",
+        "text": "#eceff4",
+        "textMuted": "#d8dee9",
+        "textDark": "#2e3440",
+        "primary": "#88c0d0",
+        "primaryHover": "#8fbcbb",
+        "success": "#a3be8c",
+        "error": "#bf616a",
+        "errorHover": "#d08770",
+        "info": "#5e81ac",
+        "warning": "#ebcb8b",
+        "accent1": "#b48ead",
+        "accent2": "#81a1c1",
+        "border": "#3b4252"
+      }
+    },
+    
+    "solarized-dark": {
+      "name": "Solarized Dark",
+      "description": "Precision colors for machines and people",
+      "colors": {
+        "background": "#002b36",
+        "backgroundDark": "#073642",
+        "backgroundLight": "#073642",
+        "surface": "#586e75",
+        "surfaceHover": "#657b83",
+        "text": "#fdf6e3",
+        "textMuted": "#93a1a1",
+        "textDark": "#002b36",
+        "primary": "#b58900",
+        "primaryHover": "#cb4b16",
+        "success": "#859900",
+        "error": "#dc322f",
+        "errorHover": "#cb4b16",
+        "info": "#268bd2",
+        "warning": "#b58900",
+        "accent1": "#d33682",
+        "accent2": "#2aa198",
+        "border": "#073642"
+      }
+    },
+    
+    "tokyo-night": {
+      "name": "Tokyo Night",
+      "description": "A clean, dark theme inspired by Tokyo at night",
+      "colors": {
+        "background": "#1a1b26",
+        "backgroundDark": "#16161e",
+        "backgroundLight": "#24283b",
+        "surface": "#414868",
+        "surfaceHover": "#565f89",
+        "text": "#c0caf5",
+        "textMuted": "#9aa5ce",
+        "textDark": "#1a1b26",
+        "primary": "#7aa2f7",
+        "primaryHover": "#89b4fa",
+        "success": "#9ece6a",
+        "error": "#f7768e",
+        "errorHover": "#ff9e64",
+        "info": "#7dcfff",
+        "warning": "#e0af68",
+        "accent1": "#bb9af7",
+        "accent2": "#73daca",
+        "border": "#24283b"
+      }
+    },
+    
+    "catppuccin-mocha": {
+      "name": "Catppuccin Mocha",
+      "description": "Soothing pastel theme",
+      "colors": {
+        "background": "#1e1e2e",
+        "backgroundDark": "#181825",
+        "backgroundLight": "#313244",
+        "surface": "#45475a",
+        "surfaceHover": "#585b70",
+        "text": "#cdd6f4",
+        "textMuted": "#a6adc8",
+        "textDark": "#1e1e2e",
+        "primary": "#f9e2af",
+        "primaryHover": "#fab387",
+        "success": "#a6e3a1",
+        "error": "#f38ba8",
+        "errorHover": "#eba0ac",
+        "info": "#89b4fa",
+        "warning": "#fab387",
+        "accent1": "#cba6f7",
+        "accent2": "#94e2d5",
+        "border": "#313244"
+      }
+    },
+    
+    "light-minimal": {
+      "name": "Light Minimal",
+      "description": "Clean and minimal light theme",
+      "colors": {
+        "background": "#ffffff",
+        "backgroundDark": "#f5f5f5",
+        "backgroundLight": "#fafafa",
+        "surface": "#e0e0e0",
+        "surfaceHover": "#d0d0d0",
+        "text": "#212121",
+        "textMuted": "#757575",
+        "textDark": "#ffffff",
+        "primary": "#1976d2",
+        "primaryHover": "#1565c0",
+        "success": "#4caf50",
+        "error": "#f44336",
+        "errorHover": "#e53935",
+        "info": "#2196f3",
+        "warning": "#ff9800",
+        "accent1": "#9c27b0",
+        "accent2": "#00bcd4",
+        "border": "#e0e0e0"
+      }
+    }
+  },
+  
+  "eventTypeExamples": {
+    "professional": [
+      { "value": "meeting", "label": "Meeting", "color": "#2196f3", "icon": "📅" },
+      { "value": "presentation", "label": "Presentation", "color": "#4caf50", "icon": "🎤" },
+      { "value": "deadline", "label": "Deadline", "color": "#f44336", "icon": "⏰" },
+      { "value": "conference", "label": "Conference", "color": "#9c27b0", "icon": "🏢" },
+      { "value": "training", "label": "Training", "color": "#ff9800", "icon": "📚" },
+      { "value": "review", "label": "Review", "color": "#00bcd4", "icon": "📝" }
+    ],
+    
+    "academic": [
+      { "value": "lecture", "label": "Lecture", "color": "#3f51b5", "icon": "🎓" },
+      { "value": "lab", "label": "Lab", "color": "#4caf50", "icon": "🔬" },
+      { "value": "exam", "label": "Exam", "color": "#f44336", "icon": "📝" },
+      { "value": "assignment", "label": "Assignment", "color": "#ff9800", "icon": "📚" },
+      { "value": "study", "label": "Study Group", "color": "#9c27b0", "icon": "👥" },
+      { "value": "office-hours", "label": "Office Hours", "color": "#00bcd4", "icon": "🕐" }
+    ],
+    
+    "personal": [
+      { "value": "appointment", "label": "Appointment", "color": "#2196f3", "icon": "📋" },
+      { "value": "birthday", "label": "Birthday", "color": "#e91e63", "icon": "🎂" },
+      { "value": "exercise", "label": "Exercise", "color": "#4caf50", "icon": "💪" },
+      { "value": "meal", "label": "Meal", "color": "#ff9800", "icon": "🍽️" },
+      { "value": "travel", "label": "Travel", "color": "#00bcd4", "icon": "✈️" },
+      { "value": "hobby", "label": "Hobby", "color": "#9c27b0", "icon": "🎨" },
+      { "value": "family", "label": "Family", "color": "#795548", "icon": "👨‍👩‍👧‍👦" },
+      { "value": "friends", "label": "Friends", "color": "#ffc107", "icon": "👫" }
+    ],
+    
+    "medical": [
+      { "value": "doctor", "label": "Doctor", "color": "#f44336", "icon": "👨‍⚕️" },
+      { "value": "dentist", "label": "Dentist", "color": "#2196f3", "icon": "🦷" },
+      { "value": "checkup", "label": "Check-up", "color": "#4caf50", "icon": "🏥" },
+      { "value": "medication", "label": "Medication", "color": "#ff9800", "icon": "💊" },
+      { "value": "therapy", "label": "Therapy", "color": "#9c27b0", "icon": "🧠" },
+      { "value": "vaccination", "label": "Vaccination", "color": "#00bcd4", "icon": "💉" }
+    ]
+  },
+  
+  "howToUse": {
+    "changeTheme": "Copy any theme from 'themes' section into config.json's 'theme' object",
+    "changeEventTypes": "Copy any array from 'eventTypeExamples' into config.json's 'eventTypes' array",
+    "customColors": "Modify any color value using hex codes (#000000 format)",
+    "customEventTypes": "Add or remove event types - just follow the same structure with value, label, color, and icon",
+    "restartRequired": "After changing config.json, refresh the browser or restart the server"
+  }
+}

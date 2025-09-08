@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monthly Calendar</title>
+  <link rel="stylesheet" href="calendar-style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Monthly Calendar</h2>
+    
+    <!-- Navigation Controls -->
+    <div class="calendar-header">
+      <button id="prevMonth" class="nav-btn">◀</button>
+      <h3 id="monthYear"></h3>
+      <button id="nextMonth" class="nav-btn">▶</button>
+    </div>
+
+    <!-- Calendar Grid -->
+    <table id="calendar">
+      <thead>
+        <tr id="calendarHeader">
+          <!-- Day headers will be generated from config -->
+        </tr>
+      </thead>
+      <tbody id="calendarBody">
+        <!-- Calendar dates will be generated here -->
+      </tbody>
+    </table>
+
+    <!-- Today Button -->
+    <div class="controls">
+      <button id="todayBtn" class="today-btn">Today</button>
+      <button id="addEventBtn" class="add-event-btn">+ Add Event</button>
+    </div>
+
+    <!-- Event List -->
+    <div class="event-section">
+      <h3>Upcoming Events</h3>
+      <div id="eventList" class="event-list">
+        <!-- Events will be displayed here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Modal -->
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Add New Event</h3>
+      <form id="eventForm">
+        <div class="form-group">
+          <label for="eventTitle">Event Title:</label>
+          <input type="text" id="eventTitle" required />
+        </div>
+        <div class="form-group">
+          <label for="eventDate">Date:</label>
+          <input type="date" id="eventDate" required />
+        </div>
+        <div class="form-group">
+          <label for="eventTime">Time:</label>
+          <input type="time" id="eventTime" />
+        </div>
+        <div class="form-group">
+          <label for="eventType">Type:</label>
+          <select id="eventType">
+            <!-- Event types will be loaded from config -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="eventDescription">Description:</label>
+          <textarea id="eventDescription" rows="3"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Add Event</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="calendar.js"></script>
+</body>
+</html>
